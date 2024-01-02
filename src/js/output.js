@@ -15,7 +15,7 @@
   \*************************/
 /***/ (() => {
 
-eval("\n\n//# sourceURL=webpack://shoot-off-website/./src/js/input.js?");
+eval("\r\n// Mouse follower\r\n\r\nconst btnMenu = document.querySelector('#menubtn')\r\nconst barUn = document.querySelector('#bar-1')\r\nconst barDeux = document.querySelector('#bar-2')\r\nconst menu = document.querySelector('#menu')\r\n\r\nbtnMenu.addEventListener('click', () => {\r\n    menu.classList.toggle('scale-0')\r\n    barUn.classList.toggle('rotate-45')\r\n    barUn.classList.toggle('absolute')\r\n    barDeux.classList.toggle('mt-2')\r\n    barDeux.classList.toggle('-rotate-45')\r\n})\r\n\n\n//# sourceURL=webpack://shoot-off-website/./src/js/input.js?");
 
 /***/ })
 

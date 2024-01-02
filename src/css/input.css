@@ -7,3 +7,10 @@
 body{
     font-family: 'Figtree', sans-serif;
 }
+
+/* #mouse_follow{
+    transition: all 0.04s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
