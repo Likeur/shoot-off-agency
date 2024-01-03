@@ -20,7 +20,7 @@ const myHeroText = new SplitType('#herotext')
 const myHeroPara = new SplitType('#heroparagraph')
 
 gsap.from('#logo, #link1, #link2, #link3,.word, #rdvbtn, #btntarif, #btnrdv2, #menubtn, #herobox1,#herobox2,#herobox3,#herobox4',{
-    y:-60,
+    y:50,
     opacity:0,
     stagger:{amount:2},
     duration:0.8
