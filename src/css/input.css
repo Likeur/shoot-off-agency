@@ -14,7 +14,3 @@ body{
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-
-#herotext{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 100%);
-}
