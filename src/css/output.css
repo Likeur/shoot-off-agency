@@ -642,10 +642,6 @@ video {
   top: -0.75rem;
 }
 
-.left-10{
-  left: 2.5rem;
-}
-
 .left-5{
   left: 1.25rem;
 }
@@ -714,6 +710,10 @@ video {
   margin-top: 2rem;
 }
 
+.mt-1{
+  margin-top: 0.25rem;
+}
+
 .\!block{
   display: block !important;
 }
@@ -778,10 +778,6 @@ video {
   height: 1.25rem;
 }
 
-.h-\[100vh\]{
-  height: 100vh;
-}
-
 .h-\[40vh\]{
   height: 40vh;
 }
@@ -793,6 +789,10 @@ video {
 .h-max{
   height: -moz-max-content;
   height: max-content;
+}
+
+.h-\[60vh\]{
+  height: 60vh;
 }
 
 .w-10{
@@ -901,6 +901,10 @@ video {
 
 .overflow-x-hidden{
   overflow-x: hidden;
+}
+
+.scroll-smooth{
+  scroll-behavior: smooth;
 }
 
 .truncate{
@@ -1016,6 +1020,11 @@ video {
   line-height: 2.25rem;
 }
 
+.text-4xl{
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
 .text-\[1\.3rem\]{
   font-size: 1.3rem;
 }
@@ -1030,9 +1039,9 @@ video {
   line-height: 1.25rem;
 }
 
-.text-4xl{
-  font-size: 2.25rem;
-  line-height: 2.5rem;
+.text-5xl{
+  font-size: 3rem;
+  line-height: 1;
 }
 
 .font-bold{
@@ -1265,6 +1274,12 @@ body{
   .lg\:w-max{
     width: -moz-max-content;
     width: max-content;
+  }
+
+  .lg\:scale-100{
+    --tw-scale-x: 1;
+    --tw-scale-y: 1;
+    transform: translate(var(--tw-translate-x), var(--tw-translate-y)) rotate(var(--tw-rotate)) skewX(var(--tw-skew-x)) skewY(var(--tw-skew-y)) scaleX(var(--tw-scale-x)) scaleY(var(--tw-scale-y));
   }
 
   .lg\:grid-cols-3{
