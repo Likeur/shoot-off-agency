@@ -2,6 +2,24 @@ import { gsap } from "gsap"
 
 // Mouse follower
 
+// let cursor = document.querySelector('#mouse_follow')
+
+// let mouseX
+// let mouseY
+
+// window.addEventListener('mousemove', (e)=>{
+//     mouseX = e.clientX
+//     mouseY = e.clientY
+
+//     gsap.to(cursor, {
+//         x:mouseX, 
+//         y:mouseY, 
+//         duration:0.5
+//     })
+// })
+
+
+
 // for the amburguer menu
 const btnMenu = document.querySelector('#menubtn')
 const barUn = document.querySelector('#bar-1')
