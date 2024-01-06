@@ -16,16 +16,16 @@
                     <h1 id="logo" class="text-[1.3rem] lg:text-4xl font-extrabold text-gray-900 flex flex-col lg:flex-row "><span>Shoot</span> <span class="lg:ml-1">Off.</span></h1>
                     <nav class="lg:ml-16 ">
                         <ul id="menu" class="flex  h-max border lg:border-none left-5 lg:left-0 mt-5 lg:mt-0 rounded-3xl lg:h-max scale-0 lg:scale-100 duration-300 absolute z-40 bg-white w-[80vw] lg:w-max p-6 lg:p-0 lg:relative flex-col lg:flex-row">
-                            <li id="link1" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#header">Acceuil</a></li>
-                            <li id="link2" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#project_section">Réalisations</a></li>
-                            <li id="link3" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing">Tarif</a></li>
+                            <li id="link1" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#header" class="block hover:text-orange-600 duration-300">Acceuil</a></li>
+                            <li id="link2" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#project_section" class="block hover:text-orange-600 duration-300">Réalisations</a></li>
+                            <li id="link3" class="mt-4 lg:mt-0 lg:ml-5 text-lg"><a href="#pricing" class="block hover:text-orange-600 duration-300">Tarif</a></li>
                         </ul>
                     </nav>
                 </div>
                 
                 <div class="flex items-center">
                     
-                    <a id="rdvbtn" href="" class="block border font-medium border-orange-600 p-2 px-4 lg:p-4 lg:px-7 rounded-full relative">
+                    <a id="rdvbtn" href="#contact" class="block border font-medium border-orange-600 p-2 px-4 lg:p-4 lg:px-7 rounded-full relative">
                         Prendre RDV
                         <div class="absolute -top-3 lg:-top-4 h-5 w-5 text-sm lg:text-lg lg:h-8 lg:w-8 bg-red-600 text-white rounded-full right-2 flex justify-center items-center">1</div>
                     </a>
@@ -46,7 +46,7 @@
                 </div>
                 <div class="flex flex-col lg:flex-row mt-4 lg:items-center lg:justify-center lg:mt-8">
                     <a id="btntarif" href="#pricing" class="block bg-gray-900 text-center p-3 text-white text-lg lg:p-4 px-7 rounded-full">Nos Tarifs</a>
-                    <a id="btnrdv2" href="" class="block border mt-5 text-center p-3 lg:mt-0 lg:w-max font-medium border-orange-600 lg:ml-4 lg:p-4 px-7 rounded-full relative">
+                    <a id="btnrdv2" href="#contact" class="block border mt-5 text-center p-3 lg:mt-0 lg:w-max font-medium border-orange-600 lg:ml-4 lg:p-4 px-7 rounded-full relative">
                         Prendre un RDV
                     </a>
                 </div>
@@ -87,7 +87,7 @@
         </section>
 
         <!-- Projet section -->
-        <section id="project_section" class="lg:container lg:mx-auto p-4 lg:p-6 mt-8 mb-8">
+        <section id="project_section" class="lg:container lg:mx-auto p-4 lg:p-6 mt-8 mb-8 lg:mb-16">
             <div>
                 <div class="mb-8">
                     <p class="text-3xl text-center font-bold lg:text-5xl">Nos Récents <span class="text-orange-600">Projets</span></p>
@@ -125,7 +125,7 @@
         </section>
 
         <!-- Pricing section -->
-        <section id="pricing" class="lg:container lg:mx-auto p-4 lg:p-6 mt-8 mb-8">
+        <section id="pricing" class="lg:container lg:mx-auto p-4 lg:p-6 mt-8 mb-8 lg:mb-16">
             <div>
                 <div class="mb-8">
                     <p class="text-3xl text-center font-bold lg:text-5xl">Des <span class="text-orange-600">Prix</span> Abordables</p>
@@ -211,7 +211,7 @@
 
 
         <!-- Dernier CTA -->
-        <section id="hero" class="mb-8 p-4 lg:p-0 flex justify-center">
+        <section id="hero" class="mb-8 p-4 lg:p-0 lg:mb-16 flex justify-center">
             <div class="grid gap-4 place-content-center lg:border lg:w-[85vw] lg:h-[80vh] p-4 lg:p-6 rounded-3xl">
                 <div class="flex text-gray-900 flex-col items-center">
                     <h2 class="text-4xl lg:text-5xl lg:w-[70vw] text-center font-extrabold">Encore Hésitant ? <span class="text-orange-600">Réserve</span> un RDV pour parler de<span class="text-orange-600"> ton Projet</span> </h2>
@@ -219,33 +219,66 @@
                 </div>
                 <div class="flex flex-col lg:flex-row mt-4 lg:items-center lg:justify-center lg:mt-8">
                     <a href="#pricing" class="block bg-gray-900 text-center p-3 text-white text-lg lg:p-4 px-7 rounded-full">Nos Tarifs</a>
-                    <a href="" class="block border mt-5 text-center p-3 lg:mt-0 lg:w-max font-medium border-orange-600 lg:ml-4 lg:p-4 px-7 rounded-full relative">
+                    <a href="#contact" class="block border mt-5 text-center p-3 lg:mt-0 lg:w-max font-medium border-orange-600 lg:ml-4 lg:p-4 px-7 rounded-full relative">
                         Prendre un RDV
                     </a>
                 </div>
             </div>
         </section>
 
+        <!-- Contact section -->
+        <section id="contact" class="flex flex-col lg:flex-row mt-8 mb-8 lg:mb-16 p-4 lg:p-6 lg:justify-around">
+            <div class="lg:w-[40vw] bg-orange-600/15 flex flex-col justify-around rounded-3xl p-5">
+                <h3 class="text-2xl lg:text-4xl font-bold text-center lg:text-left">Nous contacter pour prendre un <span class="text-orange-600">rendez-vous</span></h3>
+                <div class="mt-8 flex flex-col text-xl lg:text-2xl">
+                    <a href="" class="flex items-center">
+                        <span class="text-orange-600 mr-2 bg-orange-600/20 shadow-md p-2 rounded-full h-10 w-10 grid place-content-center"><i class='bx bxl-whatsapp'></i></span>
+                        <span class="underline font-thin">0973387383</span>
+                    </a>
+                    <a href="" class="flex items-center mt-5">
+                        <span class="text-orange-600 mr-2 bg-orange-600/20 shadow-md p-2 rounded-full h-10 w-10 grid place-content-center"><i class='bx bxl-instagram' ></i></span>
+                        <span class="underline font-thin"> shoot_off</span>
+                    </a>
+                    <a href="" class="flex items-center mt-5">
+                        <span class="text-orange-600 mr-2 bg-orange-600/20 shadow-md p-2 rounded-full h-10 w-10 grid place-content-center"><i class='bx bxl-linkedin'></i></span>
+                        <span class="underline font-thin">shoot_off_agency</span>
+                    </a>
+                </div>
+            </div>
+            <div class="flex justify-center">
+                <form action=""  class="border rounded-lg mt-8 lg:mt-0 p-4 lg:w-[30vw]">
+                    <div>
+                        <input type="email" name="" placeholder="votre email" id="" class="border p-2 w-full rounded-lg outline-none focus:border-orange-600/70">
+                        <textarea name="" placeholder="Votre message ici.." id="" cols="30" class="border mt-4 w-full outline-none focus:border-orange-600/70 p-2 rounded-lg" rows="10"></textarea>
+                        <div class="mt-4">
+                            <button type="submit" class="p-2 bg-orange-600 px-8 rounded-lg text-white">Envoyer</button>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
+
         <!-- Footer section -->
-        <footer class="lg:container lg:h-[50vh] flex flex-col justify-between lg:mx-auto p-4 lg:p-9">
-            <section class=" h-max flex flex-col lg:flex-row lg:justify-between ">
-                <div>
-                    <h1 class="text-2xl lg:text-4xl font-extrabold text-gray-900 ">Shoot Off.</h1>
-                </div>
-                <div class="lg:w-[70vw] mt-8 lg:mt-0 flex justify-center">
-                    <ul class="grid grid-cols-2  gap-4 lg:gap-6 lg:grid-cols-3">
-                        <li><a href="">Acceuil</a></li>
-                        <li><a href="">Réalisation</a></li>
-                        <li><a href="">Nous appelé : +243 97338 7383</a></li>
-                        <li><a href="">Linkedin</a></li>
-                        <li><a href="">Instagram</a></li>
-                    </ul>
-                </div>
-            </section>
-            <section class=" flex flex-col lg:flex-row lg:justify-between border-t mt-4 lg:mt-0">
-                <p class="pt-6">&copy; 2024 - Shoot off Agency - <a href="" class="underline">Mentions légales</a></p>
-            </section>
-        </footer>
+        <section class="bg-orange-600 rounded-t-[2rem] lg:rounded-t-[3rem] p-4 lg:p-6">
+            <footer class="lg:container lg:h-[50vh]  text-white flex flex-col justify-between lg:mx-auto p-4 lg:p-9">
+                <section class=" h-max flex flex-col lg:flex-row lg:justify-between ">
+                    <div>
+                        <h1 class="text-2xl lg:text-4xl font-extrabold ">Shoot Off.</h1>
+                    </div>
+                    <div class="lg:w-[70vw] mt-8 lg:mt-0 flex justify-center">
+                        <ul class="grid grid-cols-2  gap-4 lg:gap-6 lg:grid-cols-3">
+                            <li><a href="">Acceuil</a></li>
+                            <li><a href="">Réalisation</a></li>
+                            <li><a href="">Linkedin</a></li>
+                            <li><a href="">Instagram</a></li>
+                        </ul>
+                    </div>
+                </section>
+                <section class=" flex flex-col lg:flex-row lg:justify-between border-t mt-4 lg:mt-3">
+                    <p class="pt-6">&copy; 2024 - Shoot off Agency - <a href="" class="underline">Mentions légales</a></p>
+                </section>
+            </footer>
+        </section>
     </main>
 
     <script src="https://unpkg.com/split-type"></script>
