@@ -1,4 +1,7 @@
 import { gsap } from "gsap"
+import {ScrollTrigger} from "gsap/ScrollTrigger"
+
+gsap.registerPlugin(ScrollTrigger)
 
 // Mouse follower
 
@@ -37,6 +40,7 @@ btnMenu.addEventListener('click', () => {
 const myHeroText = new SplitType('#herotext')
 const myHeroPara = new SplitType('#heroparagraph')
 
+// reveal animation timeline
 
 const tl = gsap.timeline()
 tl.from('#intro span',{
@@ -63,9 +67,44 @@ tl.from('#intro span',{
     duration:0.8
 })
 
-// gsap.from('',{
-//     y:-125,
-//     opacity:0,
-//     stagger:{amount:1},
-//     duration:0.5 
-// })
+// scroll animation timeline for intro
+
+const scrolltl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#hero',
+        start:'-15% top',
+        end:'bottom top',
+        scrub:true,
+    }
+})
+
+scrolltl.to('#herotext',{
+    scale:0.5,
+    opacity:0
+}).to('#heroparagraph, #btntarif, #btnrdv2',{
+    y:100,
+    opacity:0
+}, "<").to('#herobox1,#herobox2,#herobox3,#herobox4',{
+    y:-200,
+}, "<")
+
+// scroll animation timeline for logo partnair
+
+const logotl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#logoSection',
+        start:'top 80%',
+        end:'bottom 55%',
+        scrub:true,
+        markers:true
+    }
+})
+
+logotl.from('#logopara, #logoimg1,#logoimg2,#logoimg3,#logoimg4',{
+    y:200,
+    opacity:0,
+    stagger: {amount:0.5},
+    duration:0.8, 
+})
+
+
