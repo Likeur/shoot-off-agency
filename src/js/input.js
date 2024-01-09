@@ -5,21 +5,21 @@ gsap.registerPlugin(ScrollTrigger)
 
 // Mouse follower
 
-// let cursor = document.querySelector('#mouse_follow')
+let cursor = document.querySelector('#mouse_follow')
 
-// let mouseX
-// let mouseY
+let mouseX
+let mouseY
 
-// window.addEventListener('mousemove', (e)=>{
-//     mouseX = e.clientX
-//     mouseY = e.clientY
+window.addEventListener('mousemove', (e)=>{
+    mouseX = e.clientX
+    mouseY = e.clientY
 
-//     gsap.to(cursor, {
-//         x:mouseX, 
-//         y:mouseY, 
-//         duration:0.5
-//     })
-// })
+    gsap.to(cursor, {
+        x:mouseX, 
+        y:mouseY, 
+        duration:0.5
+    })
+})
 
 
 
