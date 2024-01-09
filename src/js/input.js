@@ -96,7 +96,6 @@ const logotl = gsap.timeline({
         start:'top 80%',
         end:'bottom 55%',
         scrub:true,
-        markers:true
     }
 })
 
@@ -107,4 +106,64 @@ logotl.from('#logopara, #logoimg1,#logoimg2,#logoimg3,#logoimg4',{
     duration:0.8, 
 })
 
+// scroll animation timeline for work section
 
+const worktl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#project_section',
+        start:'top 70%',
+        end:'bottom 60%',
+        scrub:true,
+    }
+})
+
+worktl.from('#worktext',{
+    y:100,
+    opacity:0
+}).from('#work1,#work2,#work3,#work4',{
+    y:100,
+    opacity:0,
+    stagger:0.1
+}).from('#work5,#work6,#work7,#work8',{
+    y:100,
+    opacity:0,
+    stagger:0.1
+})
+
+// scroll animation timeline for pricing section
+
+
+const pricetl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#pricing',
+        start:'top 70%',
+        end:'bottom 60%',
+        scrub:true,
+    }
+})
+
+pricetl.from('#pricingtext',{
+    y:100,
+    opacity:0
+}).from('#pricing1,#pricing2,#pricing3,#pricing4',{
+    y:100,
+    opacity:0,
+    stagger:0.1
+})
+
+// scroll animation timeline for CTA section
+
+const ctatl = gsap.timeline({
+    scrollTrigger:{
+        trigger:'#cta',
+        start:'top 80%',
+        end:'bottom 70%',
+        scrub:true,
+    }
+})
+
+ctatl.from('#ctabox',{
+    scale:1.4,
+    y:100,
+    opacity:0
+})
