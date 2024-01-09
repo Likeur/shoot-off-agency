@@ -37,10 +37,29 @@ btnMenu.addEventListener('click', () => {
 const myHeroText = new SplitType('#herotext')
 const myHeroPara = new SplitType('#heroparagraph')
 
-gsap.from('#logo, #link1, #link2, #link3,.word, #rdvbtn, #btntarif, #btnrdv2, #menubtn, #herobox1,#herobox2,#herobox3,#herobox4',{
+
+const tl = gsap.timeline()
+tl.from('#intro span',{
+    opacity:0,
+    y:200,
+    rotate:'45deg',
+    stagger:{amount:0.7},
+    duration:1,
+    ease:'expo.out'
+}).to('#intro span',{
+    opacity:0,
+    stagger:{amount:0.7},
+    duration:0.8,
+    ease:'expo.out'
+}).to('#introbox',{
+    scaleY:0,
+    transformOrigin:'top',
+    duration: 0.8,
+    ease:'sine.out'
+}).from('#logo, #link1, #link2, #link3,.word, #rdvbtn, #btntarif, #btnrdv2, #menubtn, #herobox1,#herobox2,#herobox3,#herobox4',{
     y:50,
     opacity:0,
-    stagger:{amount:2},
+    stagger:{amount:0.8},
     duration:0.8
 })
 
