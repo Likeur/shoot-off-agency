@@ -20,6 +20,16 @@ window.addEventListener('mousemove', (e)=>{
         duration:0.5
     })
 })
+window.addEventListener('mouseleave', () =>{
+    mouseX = 1
+    mouseY = 1
+
+    gsap.to(cursor, {
+        x:mouseX, 
+        y:mouseY, 
+        duration:0.5
+    })
+})
 
 
 
@@ -40,6 +50,10 @@ btnMenu.addEventListener('click', () => {
 const myHeroText = new SplitType('#herotext')
 const myHeroPara = new SplitType('#heroparagraph')
 
+// gsap.set('.btntarifs,.btnrdvv2',{
+//     y:50,
+//     opacity:0,
+// })
 // reveal animation timeline
 
 const tl = gsap.timeline()
@@ -60,12 +74,19 @@ tl.from('#intro span',{
     transformOrigin:'top',
     duration: 0.8,
     ease:'sine.out'
-}).from('#logo, #link1, #link2, #link3,.word, #rdvbtn, #btntarif, #btnrdv2, #menubtn, #herobox1,#herobox2,#herobox3,#herobox4',{
+}).from('#logo, #link1, #link2, #link3,.word, #rdvbtn, #menubtn,#btnBox, #herobox1,#herobox2,#herobox3,#herobox4',{
     y:50,
     opacity:0,
     stagger:{amount:0.8},
     duration:0.8
 })
+
+// .to('.btntarifs, .btnrdvv2',{
+//     y:0,
+//     opacity: 1,
+//     stagger:{amount:0.01},
+//     duration:0.5
+// })
 
 // scroll animation timeline for intro
 
@@ -81,7 +102,7 @@ const scrolltl = gsap.timeline({
 scrolltl.to('#herotext',{
     scale:0.5,
     opacity:0
-}).to('#heroparagraph, #btntarif, #btnrdv2',{
+}).to('#heroparagraph',{
     y:100,
     opacity:0
 }, "<").to('#herobox1,#herobox2,#herobox3,#herobox4',{
@@ -111,7 +132,7 @@ logotl.from('#logopara, #logoimg1,#logoimg2,#logoimg3,#logoimg4',{
 const worktl = gsap.timeline({
     scrollTrigger:{
         trigger:'#project_section',
-        start:'top 70%',
+        start:'top 85%',
         end:'bottom 60%',
         scrub:true,
     }
@@ -136,7 +157,7 @@ worktl.from('#worktext',{
 const pricetl = gsap.timeline({
     scrollTrigger:{
         trigger:'#pricing',
-        start:'top 70%',
+        start:'top 85%',
         end:'bottom 60%',
         scrub:true,
     }
@@ -156,7 +177,7 @@ pricetl.from('#pricingtext',{
 const ctatl = gsap.timeline({
     scrollTrigger:{
         trigger:'#cta',
-        start:'top 80%',
+        start:'top 85%',
         end:'bottom 70%',
         scrub:true,
     }
